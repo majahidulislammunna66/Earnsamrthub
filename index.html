@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover online offers and opportunities with EarnSmartHub.">
+<title>EarnSmartHub — Explore Online Offers</title>
+<style>
+:root{--green:#087f5b;--green2:#10a36f;--ink:#15231e;--muted:#64756d;--bg:#f4f8f5;--line:#e2ebe5;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:850;font-size:1.25rem;letter-spacing:-.5px;color:var(--green)}.brand span{color:var(--ink)}
+select{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit}
+main{max-width:1100px;margin:auto;padding:34px 20px 70px}
+.hero{background:linear-gradient(130deg,#073f31,#0b8b62);border-radius:26px;padding:clamp(28px,6vw,62px);color:#fff;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center;overflow:hidden}
+.eyebrow{font-size:.8rem;letter-spacing:1.4px;text-transform:uppercase;color:#b8f2d7;font-weight:750}
+h1{font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.08;letter-spacing:-1.8px;margin:12px 0 18px}
+.hero p{color:#e0f5eb;max-width:600px;margin:0 0 24px}
+.cta{display:inline-block;background:#fff;color:#075b43;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800}
+.hero-art{min-height:190px;display:grid;place-items:center}
+.orbit{width:190px;height:190px;border:1px solid #8de0bc88;border-radius:50%;display:grid;place-items:center;position:relative;background:#ffffff0d}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #8de0bc66;border-radius:50%;inset:20px}.orbit:after{inset:42px}
+.coin{width:92px;height:92px;border-radius:28px;background:#c7f5df;color:#075b43;display:grid;place-items:center;font-size:2.4rem;font-weight:900;box-shadow:0 16px 40px #001e163d;z-index:1}
+.section-title{margin:38px 0 16px;font-size:1.45rem;letter-spacing:-.4px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}
+.card-icon{width:43px;height:43px;border-radius:13px;background:#e5f6ed;display:grid;place-items:center;font-size:1.25rem}
+.card h3{margin:13px 0 5px;font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.notice{margin-top:20px;padding:17px 19px;background:#fff8e8;border:1px solid #f1dfb6;border-radius:14px;color:#684c16;font-size:.91rem}
+.smart{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.smart p{color:var(--muted);margin-top:5px}
+.smart a{display:inline-block;margin-top:8px;background:var(--green);color:#fff;text-decoration:none;font-weight:750;padding:12px 18px;border-radius:11px}
+footer{border-top:1px solid var(--line);background:#fff;color:var(--muted);font-size:.88rem}
+.foot{max-width:1100px;margin:auto;padding:22px 20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+footer a{color:var(--green);text-decoration:none;margin-left:12px}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.hero-art{min-height:130px}.orbit{width:145px;height:145px}.coin{width:72px;height:72px}.cards{grid-template-columns:1fr}.nav{padding:12px 16px}main{padding:22px 15px 50px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Earn<span>Smart</span>Hub</div>
+<label><span class="sr-only" style="position:absolute;left:-9999px">Choose language</span>
+<select id="language" aria-label="Choose language">
+<option value="en">English</option><option value="bn">বাংলা</option><option value="hi">हिन्दी</option><option value="ar">العربية</option>
+</select></label></div></header>
+<main>
+<section class="hero">
+<div><div class="eyebrow" data-i18n="eyebrow">ONLINE OFFERS & OPPORTUNITIES</div>
+<h1 data-i18n="title">Explore online opportunities with confidence.</h1>
+<p data-i18n="intro">Discover available offers in one place. Always read the terms carefully and choose only offers that are suitable for you.</p>
+<a class="cta" href="#offers" data-i18n="button">Explore offers</a></div>
+<div class="hero-art" aria-hidden="true"><div class="orbit"><div class="coin">EH</div></div></div>
+</section>
+<h2 class="section-title" id="offers" data-i18n="why">A simple place to get started</h2>
+<section class="cards">
+<article class="card"><div class="card-icon">🔎</div><h3 data-i18n="c1h">Explore offers</h3><p data-i18n="c1p">Browse opportunities and check each offer's eligibility and requirements.</p></article>
+<article class="card"><div class="card-icon">📋</div><h3 data-i18n="c2h">Read the details</h3><p data-i18n="c2p">Understand the rules, privacy terms, and any costs before participating.</p></article>
+<article class="card"><div class="card-icon">🛡️</div><h3 data-i18n="c3h">Stay safe</h3><p data-i18n="c3p">Never pay to claim a promised reward or share passwords, OTPs, or sensitive information.</p></article>
+</section>
+<div class="notice" data-i18n="notice">Important: Earnings are not guaranteed. Availability, approval, and rewards depend on the CPA network and each advertiser's terms. Do not use fake details, bots, or misleading traffic.</div>
+<section class="smart"><h2 data-i18n="smartH">Partner offer link</h2><p data-i18n="smartP">Your approved CPA Smartlink will go here. Replace the sample link in the website file only after your CPA network approves your account and provides a link.</p>
+<a id="smartlink" href="#" rel="nofollow sponsored" data-i18n="smartB">Smartlink not connected yet</a></section>
+</main>
+<footer><div class="foot"><div>© <span id="year"></span> EarnSmartHub</div><div><a href="privacy.html" data-i18n="privacy">Privacy</a><a href="terms.html" data-i18n="terms">Terms</a><a href="mailto:contact@example.com" data-i18n="contact">Contact</a></div></div></footer>
+<script>
+const copy={
+en:{eyebrow:"ONLINE OFFERS & OPPORTUNITIES",title:"Explore online opportunities with confidence.",intro:"Discover available offers in one place. Always read the terms carefully and choose only offers that are suitable for you.",button:"Explore offers",why:"A simple place to get started",c1h:"Explore offers",c1p:"Browse opportunities and check each offer's eligibility and requirements.",c2h:"Read the details",c2p:"Understand the rules, privacy terms, and any costs before participating.",c3h:"Stay safe",c3p:"Never pay to claim a promised reward or share passwords, OTPs, or sensitive information.",notice:"Important: Earnings are not guaranteed. Availability, approval, and rewards depend on the CPA network and each advertiser's terms. Do not use fake details, bots, or misleading traffic.",smartH:"Partner offer link",smartP:"Your approved CPA Smartlink will go here. Replace the sample link in the website file only after your CPA network approves your account and provides a link.",smartB:"Smartlink not connected yet",privacy:"Privacy",terms:"Terms",contact:"Contact"},
+bn:{eyebrow:"অনলাইন অফার ও সুযোগ",title:"বিশ্বাসের সঙ্গে অনলাইনের সুযোগ খুঁজে দেখুন।",intro:"বিভিন্ন অফার এক জায়গায় দেখুন। অংশ নেওয়ার আগে শর্ত ভালোভাবে পড়ুন এবং আপনার জন্য উপযুক্ত অফার বেছে নিন।",button:"অফার দেখুন",why:"শুরু করার সহজ জায়গা",c1h:"অফার খুঁজুন",c1p:"বিভিন্ন সুযোগ দেখুন এবং যোগ্যতা ও শর্ত যাচাই করুন।",c2h:"বিস্তারিত পড়ুন",c2p:"অংশ নেওয়ার আগে নিয়ম, গোপনীয়তার শর্ত এবং কোনো খরচ আছে কি না বুঝে নিন।",c3h:"নিরাপদ থাকুন",c3p:"পুরস্কারের প্রতিশ্রুতি পেতে টাকা দেবেন না; পাসওয়ার্ড বা OTP কাউকে দেবেন না।",notice:"গুরুত্বপূর্ণ: আয় নিশ্চিত নয়। অফার পাওয়া, অনুমোদন ও পুরস্কার CPA নেটওয়ার্ক এবং বিজ্ঞাপনদাতার শর্তের ওপর নির্ভর করে। ভুয়া তথ্য, বট বা বিভ্রান্তিকর ট্রাফিক ব্যবহার করবেন না।",smartH:"পার্টনার অফার লিংক",smartP:"অনুমোদিত CPA Smartlink এখানে যুক্ত হবে। CPA নেটওয়ার্ক অ্যাকাউন্ট অনুমোদন করে লিংক দেওয়ার পরেই ওয়েবসাইট ফাইলে নমুনা লিংকের জায়গায় সেটি বসাবেন।",smartB:"এখনো Smartlink যুক্ত হয়নি",privacy:"গোপনীয়তা",terms:"শর্তাবলি",contact:"যোগাযোগ"},
+hi:{eyebrow:"ऑनलाइन ऑफ़र और अवसर",title:"विश्वास के साथ ऑनलाइन अवसर खोजें।",intro:"उपलब्ध ऑफ़र एक जगह देखें। भाग लेने से पहले शर्तें ध्यान से पढ़ें और अपने लिए सही ऑफ़र चुनें।",button:"ऑफ़र देखें",why:"शुरू करने की आसान जगह",c1h:"ऑफ़र खोजें",c1p:"अवसर देखें और हर ऑफ़र की पात्रता तथा ज़रूरतें जाँचें।",c2h:"जानकारी पढ़ें",c2p:"भाग लेने से पहले नियम, गोपनीयता शर्तें और संभावित लागत समझें।",c3h:"सुरक्षित रहें",c3p:"इनाम पाने के लिए पैसे न दें और पासवर्ड या OTP साझा न करें।",notice:"महत्वपूर्ण: कमाई की गारंटी नहीं है। ऑफ़र और इनाम CPA नेटवर्क तथा विज्ञापनदाता की शर्तों पर निर्भर करते हैं। नकली जानकारी, बॉट या भ्रामक ट्रैफ़िक का उपयोग न करें।",smartH:"पार्टनर ऑफ़र लिंक",smartP:"आपका स्वीकृत CPA Smartlink यहाँ जोड़ा जाएगा। नेटवर्क से स्वीकृति और लिंक मिलने के बाद ही नमूना लिंक बदलें।",smartB:"Smartlink अभी जुड़ा नहीं है",privacy:"गोपनीयता",terms:"नियम",contact:"संपर्क"},
+ar:{eyebrow:"العروض والفرص عبر الإنترنت",title:"اكتشف الفرص عبر الإنترنت بثقة.",intro:"تعرّف على العروض المتاحة في مكان واحد. اقرأ الشروط بعناية واختر العروض المناسبة لك فقط.",button:"استكشف العروض",why:"مكان بسيط للبدء",c1h:"استكشف العروض",c1p:"تصفّح الفرص وتحقق من شروط الأهلية والمتطلبات لكل عرض.",c2h:"اقرأ التفاصيل",c2p:"افهم القواعد وشروط الخصوصية وأي تكاليف قبل المشاركة.",c3h:"حافظ على سلامتك",c3p:"لا تدفع للحصول على مكافأة موعودة، ولا تشارك كلمات المرور أو رموز OTP.",notice:"مهم: لا يوجد ضمان للأرباح. يعتمد توفر العروض والموافقة والمكافآت على شبكة CPA وشروط المعلن. لا تستخدم بيانات مزيفة أو روبوتات أو زيارات مضللة.",smartH:"رابط عروض الشريك",smartP:"سيظهر رابط CPA Smartlink المعتمد هنا. استبدل الرابط التجريبي في ملف الموقع فقط بعد موافقة شبكة CPA وتزويدك بالرابط.",smartB:"لم تتم إضافة Smartlink بعد",privacy:"الخصوصية",terms:"الشروط",contact:"اتصل بنا"}
+};
+function setLang(lang){const d=copy[lang]||copy.en;document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(d[k])el.textContent=d[k]});}
+document.getElementById("language").addEventListener("change",e=>setLang(e.target.value));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
